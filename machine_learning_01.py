@@ -1,7 +1,3 @@
-# In Machine Learning, three values interest us:
-#   Mean - The average value
-# Median - The mid point value
-#   Mode - The most common value
 import numpy
 from scipy import stats
 
@@ -15,8 +11,16 @@ print(f'Mean value: {numpy.mean(array_1)}')
 print(f'Median value: {numpy.median(array_1)}')
 # If there are two, divide the sum by two
 
-# Median: The that appears the most number of times:
+# Median: The that appears the most number of times
 print(stats.mode(array_1))
+
+# Standard deviation: Describes how spread out the values are
+print(f'Standard deviation: {numpy.std(array_1)}')
+
+# Percentiles: Describes the value that a given percent of the values are lower than
+print(f'Percentiles (75%): {numpy.percentile(array_1, 75)}')
 
 # SOURCE:
 # https://www.w3schools.com/python/python_ml_mean_median_mode.asp
+# https://www.w3schools.com/python/python_ml_standard_deviation.asp
+# https://www.w3schools.com/python/python_ml_percentile.asp
