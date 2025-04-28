@@ -9,4 +9,4 @@ plt.hist(test_array, 100)
 plt.show()
 
 # SOURCE:
-# https://www.w3schools.com/python/python_ml_normal_data_distribution.asp
+# https://www.w3schools.com/python/python_ml_data_distribution.asp
