@@ -19,11 +19,11 @@ slope, intercept, r, pvalue, std_err = stats.linregress(array_x, array_y)
 #   std_err: The standard error of the estimated slope.
 
 # Creating the regression line
-reg_line = list(map(regress_line, array_x))
+model_line = list(map(regress_line, array_x))
 
 # Displaying the result
 plt.scatter(array_x, array_y)
-plt.plot(reg_line, array_x)
+plt.plot(model_line, array_x)
 plt.show()
 
 # SOURCE:
