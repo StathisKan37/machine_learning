@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from sklearn.metrics import r2_score
 
 # Two arrays to represent X axis and Y axis
 array_x = [1,2,3,5,6,7,8,9,10,12,13,14,15,16,18,19,21,22]
@@ -16,6 +17,16 @@ myline = np.linspace(1, 22, 100)
 plt.scatter(array_x, array_y)
 plt.plot(myline, model_line(myline))
 plt.show() 
+
+# R Squared: How well the relationship between the values of the x- and y-axis is
+# If there are no relationship the polynomial regression can not predict
+# The r-squared value ranges from 0 to 1
+# 0: No relationship
+# 1: 100% related
+print(f'R-Squared value: {r2_score(array_y, model_line(array_x))}') 
+
+# Predicting a value
+print(f'If x=17, y={model_line(17)}')
 
 # SOURCE:
 # https://www.w3schools.com/python/python_ml_polynomial_regression.asp
