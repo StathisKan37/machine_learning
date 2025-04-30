@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import numpy as np
+import numpy
 from scipy import stats
 
 # This function returns the regression line
@@ -7,8 +7,8 @@ def regress_line(array_x):
   return array_x * slope + intercept
 
 # Two arrays to represent X axis and Y axis
-array_x = np.sort(np.random.randint(0, 99, 30)) - np.random.randint(0,10,30)
-array_y = np.sort(np.random.randint(0, 99, 30))
+array_x = numpy.sort(numpy.random.randint(0, 99, 30)) - numpy.random.randint(0,10,30)
+array_y = numpy.sort(numpy.random.randint(0, 99, 30))
 
 # Linear Regression Calculation
 slope, intercept, r, pvalue, std_err = stats.linregress(array_x, array_y)
