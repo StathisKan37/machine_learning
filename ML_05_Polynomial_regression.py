@@ -11,11 +11,11 @@ model_object = np.poly1d(np.polyfit(array_x, array_y, 3))
 
 # Displaying the line
 # Starting at position 1, end at position 22
-myline = np.linspace(1, 22, 100)
+model_line = np.linspace(1, 22, 100)
 
 # Displaying the result
 plt.scatter(array_x, array_y)
-plt.plot(myline, model_object(myline))
+plt.plot(model_line, model_object(model_line))
 plt.show() 
 
 # R Squared: How well the relationship between the values of the x- and y-axis is
