@@ -9,7 +9,7 @@ array_y = [100,90,80,60,60,55,60,65,70,70,75,76,78,79,90,99,99,100]
 # Making a polynomial model
 model_object = np.poly1d(np.polyfit(array_x, array_y, 3)) 
 
-# Displaying the line
+# Making the linespace
 # Starting at position 1, end at position 22
 model_line = np.linspace(1, 22, 100)
 
