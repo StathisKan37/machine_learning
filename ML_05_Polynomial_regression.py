@@ -26,7 +26,7 @@ plt.show()
 print(f'R-Squared value: {r2_score(array_y, model_object(array_x))}') 
 
 # Predicting a value
-print(f'If x=17, y={model_line(17)}')
+print(f'If x=17, y={model_object(17)}')
 
 # SOURCE:
 # https://www.w3schools.com/python/python_ml_polynomial_regression.asp
