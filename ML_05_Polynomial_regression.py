@@ -23,7 +23,7 @@ plt.show()
 # The r-squared value ranges from 0 to 1
 # 0: No relationship
 # 1: 100% related
-print(f'R-Squared value: {r2_score(array_y, model_line(array_x))}') 
+print(f'R-Squared value: {r2_score(array_y, model_object(array_x))}') 
 
 # Predicting a value
 print(f'If x=17, y={model_line(17)}')
