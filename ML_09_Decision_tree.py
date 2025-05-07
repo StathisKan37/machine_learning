@@ -13,8 +13,8 @@ dictionary = {'YES': 1, 'NO': 0}
 dataframe['Go'] = dataframe['Go'].map(dictionary)
 print(dataframe)
 
-# Feature columns: the columns with the values we predict from
-# Target column: the column with the values we predict
+# Feature columns (X): [Age, Experience, Rank, Nationality]
+# Target column (y): [Go]
 features = ['Age', 'Experience', 'Rank', 'Nationality']
 X = dataframe[features]
 y = dataframe['Go']
