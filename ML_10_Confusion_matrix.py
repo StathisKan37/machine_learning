@@ -2,11 +2,14 @@ import numpy
 from sklearn import metrics
 import matplotlib.pyplot as plt
 
-actual = numpy.random.binomial(1,.9,size = 1000)
-predicted = numpy.random.binomial(1,.9,size = 1000)
+# Generating the numbers for actual and predicted values
+# actual values: val_act
+# predicted values: val_pred
+val_act = numpy.random.binomial(1,.9,size = 1000)
+val_pred = numpy.random.binomial(1,.9,size = 1000)
 
-confusion_matrix = metrics.confusion_matrix(actual, predicted)
-
+# Using the confusion matrix function
+confusion_matrix = metrics.confusion_matrix(val_act, val_pred)
 cm_display = metrics.ConfusionMatrixDisplay(confusion_matrix = confusion_matrix, display_labels = [0, 1])
 
 # Printing the proportion of correct predictions
@@ -16,6 +19,7 @@ print(f'Sensitivity recall: {metrics.recall_score(actual, predicted)}')
 print(f'Specificity: {metrics.recall_score(actual, predicted, pos_label=0)}')
 print(f'F1_score: {metrics.f1_score(actual, predicted)}')
 
+# Displaying the plot
 cm_display.plot()
 plt.show()
 
