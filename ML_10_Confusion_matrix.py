@@ -1,6 +1,6 @@
 import numpy
-from sklearn import metrics
 import matplotlib.pyplot as plt
+from sklearn import metrics
 
 # Generating the numbers for actual and predicted values
 # actual values: val_act
